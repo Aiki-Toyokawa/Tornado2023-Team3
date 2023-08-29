@@ -8,6 +8,7 @@ const user = {
 };
 
 const alienEncounters = 200;
+const numberOfConnections = 100;
 
 export const DashboardPage = () => {
   return (
@@ -22,29 +23,59 @@ export const DashboardPage = () => {
         <h2 className="user-name text-xl md:text-2xl font-bold">{user.name}</h2>
       </div>
 
-      {/* 遭遇したエイリアンの数 */}
-      <div className="alien-encounters mb-8 bg-blue-900 p-4 rounded-xl shadow-md">
-        <p className="text-lg md:text-xl">
-          遭遇したエイリアンの数:{" "}
-          <span className="font-bold">{alienEncounters}</span>
-        </p>
+    
+      {/*交信回数と遭遇したエイリアンの数のフレームを横に並べる*/} 
+      <div className="section">
+        <p className="ml-2">実績</p>
+        <hr className="mb-2"/>{/*横棒*/}
+        <div className="stats-container flex items-center justify-between">
+          {/* 交信回数 */}          
+          <div className="alien-encounters flex-1 mb-8 bg-blue-900 p-4 rounded-xl shadow-md mx-2">
+            <p className="text-sm md:text-xl">
+              交信回数<br/>
+            </p>
+            <p className="text-lg md:text-xl">
+              <span className="font-bold">{alienEncounters}</span>
+            </p>
+          </div>
+          {/* 遭遇したエイリアンの数 */}
+          <div className="alien-encounters flex-1 mb-8 bg-blue-900 p-4 rounded-xl shadow-md mx-2">
+            <p className="text-sm md:text-xl">
+              遭遇したエイリアンの数<br/>
+            </p>
+            <p className="text-lg md:text-xl">
+              <span className="font-bold">{numberOfConnections}</span>
+            </p>
+            
+          </div>
+        </div>
       </div>
+      
+
+
 
       {/* プロフィール編集とアカウント設定への遷移ボタン */}
-      <div className="navigation-buttons space-y-4">
-        <Link
-          to="/edit-profile"
-          className="edit-profile-btn block text-center py-2 px-4 bg-blue-500 text-white rounded-full hover:bg-green-600"
-        >
-          プロフィール編集
-        </Link>
-        <Link
-          to="/account-settings"
-          className="account-settings-btn block text-center py-2 px-4 bg-blue-500 text-white rounded-full hover:bg-green-500"
-        >
-          アカウント設定
-        </Link>
+      <div className="section">
+        <p className="ml-2">あなたについて</p>
+        <hr className="mb-2"/>{/*横棒*/}
+        <div className="navigation-buttons space-y-4">
+
+          <Link
+            to="/edit-profile"
+            className="edit-profile-btn block text-center py-2 px-4 bg-blue-500 text-white rounded-full hover:bg-green-600"
+          >
+            プロフィール編集
+          </Link>
+          <Link
+            to="/account-settings"
+            className="account-settings-btn block text-center py-2 px-4 bg-blue-500 text-white rounded-full hover:bg-green-500"
+          >
+            アカウント設定
+          </Link>
+        </div>
+      
       </div>
     </div>
+      
   );
 };
