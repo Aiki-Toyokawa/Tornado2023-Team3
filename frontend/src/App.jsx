@@ -17,6 +17,7 @@ import { MatchWaitingPage }    from "./pages/matches/MatchWaitingPage";
 import { MatchedPage}          from "./pages/matches/MatchedPage.jsx";
 
 import "./assets/styles/tailwind.css";
+import { MatchSettingsPage } from "./pages/matches/MatchSettingsPage";
 
 export default function App() {
   return (
@@ -110,6 +111,11 @@ export default function App() {
             </DefaultLayout>
           }
         />
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
         <Route
           path="/matched"
           element={
@@ -118,6 +124,18 @@ export default function App() {
             </DefaultLayout>
           }
         />
+<<<<<<< Updated upstream
+=======
+        <Route
+          path="/match-settings"
+          element={
+            <DefaultLayout>
+              <MatchSettingsPage />
+            </DefaultLayout>
+          }
+        />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
       </Routes>
     </Router>
   );

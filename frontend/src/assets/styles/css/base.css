@@ -11,3 +11,8 @@
   user-select: none;
   text-decoration: none;
 }
+
+img {
+  margin: 0;
+  padding: 0;
+}
