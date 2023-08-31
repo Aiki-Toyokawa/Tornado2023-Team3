@@ -22,6 +22,8 @@ import { MatchInputPage } from "./pages/matches/MatchInputPage";
 import { MatchResultPage } from "./pages/matches/MatchResultPage";
 import { MatchWaitingPage } from "./pages/matches/MatchWaitingPage";
 import { MatchedPage } from "./pages/matches/MatchedPage.jsx";
+import { RecruitListPage } from "./pages/recruit/RecruitListPage";
+import { CreateRecruitPage } from "./pages/recruit/CreateRecruitPage";
 
 import { getCurrentUser } from "./api/auth";
 
@@ -210,6 +212,25 @@ export const App = () => {
               />
             }
           />
+          {/* TODO:あとでprivateRouteContentに戻す */}
+          <Route
+            path="/recruit"
+            element={
+              <PlainLayout>
+                <RecruitListPage />
+              </PlainLayout>
+            }
+          />
+          <Route
+            path="/recruit/create"
+            element={
+              <PlainLayout>
+                <CreateRecruitPage />
+              </PlainLayout>
+            }
+          />
+          
+         
         </Routes>
       </AuthContext.Provider>
     </Router>
