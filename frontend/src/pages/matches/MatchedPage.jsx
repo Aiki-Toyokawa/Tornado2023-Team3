@@ -11,7 +11,7 @@ export const MatchedPage = () => {
   return (
     <div className="matched-screen">
 
-      <div className="communication-status">更新状況</div>
+      <div className="communication-status">交信状況</div>
 
       <div className="main-wrap">
 

@@ -1,4 +1,5 @@
 // MatchSettingsPage.jsx
+import { useState } from "react";
 import "../../assets/styles/css/MatchSettingsPage.css";
 
 import matchedAlienGradation from "../../assets/images/matched_alien_gradation.svg";
@@ -10,6 +11,9 @@ import arrowDown from "../../assets/images/arrow_down.svg";
 
 
 export const MatchSettingsPage = () => {
+
+  const [birthdate, setBirthdate] = useState("");
+
   return(
     <div className="match-settings-screen">
       <header className="communication-setting-wrap">
@@ -29,11 +33,27 @@ export const MatchSettingsPage = () => {
 
 
           <div className="date-set-wrap">
-            <div className="date-set-text">年/月/日 --:--</div>
+            <div className="date-set-text">
+              <input type="date"
+              value={birthdate}
+              onChange={(e) => setBirthdate(e.target.value)}
+            />
+            年/月/日 --:--</div>
             <img src={matchingDateGray} alt="matching_date_gray"></img>
           </div>
 
           <div className="date-add-text">選択した日時を追加</div>
+          
+
+          <div className="">
+            <input type="date"
+              
+              value={birthdate}
+              onChange={(e) => setBirthdate(e.target.value)}
+            />
+          </div>
+
+
 
           <div className="added-time-wrap">
             <div className="divide-line"></div>

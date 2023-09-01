@@ -1,6 +1,10 @@
 /* MatchSettingsPage.css */
 @import "base.css";
 
+* {
+  color: #000000;
+}
+
 .match-settings-screen {
   height: auto;
   width: 100%;

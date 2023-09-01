@@ -2,21 +2,23 @@
 @import 'base.css';
 
 .matched-screen {
-  height: 80vh;
+  height: auto;
   width: 100%;
   background-color: #ffffff;
+  margin-bottom: 60px;
 }
 
 .communication-status {
-  color: #000000;
   background-color: #e5e5e5;
   height: 50px;
   padding-left: 20px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 10px;
-  display: flex;
-  align-items: center;
 }
 
 .main-wrap {
