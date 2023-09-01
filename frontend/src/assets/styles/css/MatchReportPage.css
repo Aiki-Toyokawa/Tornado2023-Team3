@@ -1,0 +1,122 @@
+/* MatchReportPage.css */
+
+@import "base.css";
+.match-report-screen {
+  height: auto;
+  width: 100%;
+  background-color: #ffffff;
+  margin-bottom: 60px;
+}
+
+.match-report-header {
+  background-color: #e5e5e5;
+  height: 50px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 10px;
+}
+
+.match-report-main {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.match-report-content-wrap {
+  margin-top: 30px;
+  width: 320px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.match-report-subtitle-wrap {
+  display: flex;
+  align-items: center;
+}
+.match-report-subtitle-wrap img {
+  width: 16px;
+  height: 19px;
+}
+.match-report-subtitle-text {
+  padding-left: 16px;
+
+  color: #000000;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+.register-report-btn {
+  height: 70px;
+  width: 100%;
+  margin-top: 40px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #9333EA 0%, #60A5FA 100%);
+  box-shadow: 1px 2px 9px 0px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 6px;
+}
+
+.report-card-wrap {
+  height: 120px;
+  width: 100%;
+  margin-top: 16px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 1px 2px 9px 0px rgba(0, 0, 0, 0.25);
+}
+.report-card-upper-wrap {
+  display: flex;
+  gap: 20px;
+}
+.report-card-user {
+  width: 48px;
+  height: 48px;
+  border: solid 4px #A0AEC0;
+  border-radius: 50%;
+  background-color: #A0AEC0;
+}
+.report-card-upper-text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.report-card-name {
+  color: #000000;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.report-card-info {
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.report-card-lower-wrap {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lower-star-wrap {
+  display: flex;
+  gap: 2px;
+}
+.lower-trouble-text {
+  color: #F87171;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}

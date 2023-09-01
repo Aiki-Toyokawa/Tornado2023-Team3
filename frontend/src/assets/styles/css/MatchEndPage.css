@@ -1,0 +1,63 @@
+/* MatchEndPage.css */
+
+@import "base.css";
+
+.match-end-screen {
+  height: 70vh;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.match-end-header {
+  background-color: #e5e5e5;
+  height: 50px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 10px;
+}
+
+.match-end-main {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.match-end-content-wrap {
+  height: 100%;
+  width: 320px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.match-end-content-text {
+  text-align: center;
+
+  color: #000000; 
+  font-weight: bold;
+  letter-spacing: 4px;
+
+}
+.match-end-content-btn {
+  width: 85%;
+  height: 70px;
+  margin-top: 30px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #9333EA 0%, #60A5FA 100%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
